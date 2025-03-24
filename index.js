@@ -1,11 +1,15 @@
-$(document).ready(function() {
-    $("#menu-toggle").click(function() {
-        $("#menu").toggleClass("active");
-        $("#menu-overlay").toggleClass("active");
+document.addEventListener("DOMContentLoaded", function() {
+    var menuToggle = document.getElementById("menu-toggle");
+    var menu = document.getElementById("menu");
+    var menuOverlay = document.getElementById("menu-overlay");
+
+    menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("active");
+        menuOverlay.classList.toggle("active");
     });
 
-    $("#menu-overlay").click(function() {
-        $("#menu").removeClass("active");
-        $("#menu-overlay").removeClass("active");
+    menuOverlay.addEventListener("click", function() {
+        menu.classList.remove("active");
+        menuOverlay.classList.remove("active");
     });
 });
