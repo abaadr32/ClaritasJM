@@ -75,35 +75,6 @@ header {
     color: var(--secondary-color);
     text-decoration: underline;
 }
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 150px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 10px;
-    color: #3b3b3b;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.dropdown-content a:hover {
-    background-color: var(--main-light-color);
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 .right-nav {
     display: flex;
@@ -133,31 +104,54 @@ header {
     font-size: 24px;
     cursor: pointer;
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
 
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        padding: 15px 0;
-        text-align: center;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease-in-out;
-    }
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #3b3b3b;
+    text-decoration: none;
+    font-size: 1rem;
+}
 
-    .menu.active {
-        display: flex;
-    }
+.dropdown-content a:hover {
+    background-color: var(--main-light-color);
+}
 
-    .menu-toggle {
+/* Desktop: Show dropdown on hover */
+@media (min-width: 769px) {
+    .dropdown:hover .dropdown-content {
         display: block;
-        font-size: 24px;
-        cursor: pointer;
+    }
+}
+
+/* Mobile: Keep dropdown inside nav */
+@media (max-width: 768px) {
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
         background: none;
-        border: none;
+        text-align: center;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
     }
 }
