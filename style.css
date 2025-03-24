@@ -1,4 +1,3 @@
-/* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +14,11 @@ ul {
 }
 
 :root {
-    --main-color: #ffbfe2;
-    --main-light-color: #fffbf0;
+    --main-color: #ff95cf;
+    --main-light-color: #fff4d7;
     --secondary-color: #551756;
 }
 
-/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -38,7 +36,6 @@ header {
     font-weight: 500;
 }
 
-/* Navigation Bar */
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -51,15 +48,15 @@ header {
 }
 
 .logo {
-    height: 60px;
+    height: 70px;
 }
 
 .logo img {
     height: 100%;
     object-fit: contain;
+    border-radius: 50%;
 }
 
-/* Menu */
 .menu {
     display: flex;
     gap: 20px;
@@ -78,8 +75,36 @@ header {
     color: var(--secondary-color);
     text-decoration: underline;
 }
+.dropdown {
+    position: relative;
+}
 
-/* Right Navigation */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #3b3b3b;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--main-light-color);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .right-nav {
     display: flex;
     gap: 15px;
