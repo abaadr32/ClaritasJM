@@ -200,3 +200,18 @@ header {
     }
 }
 
+@media (max-width: 768px) {
+    .container {
+        display: block !important;
+        width: 90%;
+        margin: auto;
+        position: relative;
+        z-index: 1; 
+    }
+
+    .menu {
+        z-index: 10;
+    }
+}
+
+
