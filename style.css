@@ -76,6 +76,12 @@ header {
     text-decoration: underline;
 }
 
+#dropdown-toggle::after {
+    content: "\25BC";  
+    font-size: 14px;
+    margin-left: 5px;
+}
+
 .right-nav {
     display: flex;
     gap: 15px;
@@ -94,14 +100,6 @@ header {
 
 .right-nav a:hover {
     background-color: var(--main-color);
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
 }
 
 .dropdown-content {
@@ -154,6 +152,18 @@ header {
     }
 }
 
+.menu.active {
+    display: flex;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+.menu-overlay.active {
+    display: block;  
+}
+
 .menu-toggle {
     display: none;
     background: none;
@@ -189,5 +199,3 @@ header {
         border: none;
     }
 }
-
-
