@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: poppins;
 }
 
 a {
@@ -170,6 +170,7 @@ header {
     border: none;
     font-size: 24px;
     cursor: pointer;
+    
 }
 
 @media (max-width: 768px) {
@@ -192,12 +193,30 @@ header {
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
         font-size: 24px;
         cursor: pointer;
         background: none;
         border: none;
+        justify-content: center;
+    } 
+    
+    .menu-toggle span {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        height: 100%;
     }
+
+    .menu-container {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+        width: 100%;
+        padding: 0 20px;
+    }
+
 }
 
 @media (max-width: 768px) {
