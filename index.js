@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function()  {
     var menuToggle = document.getElementById ("menu-toggle");
     var menu = document.getElementById("menu");
     var menuOverlay = document.getElementById("menu-overlay");

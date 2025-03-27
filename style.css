@@ -22,7 +22,14 @@ ul {
 header {
     display: flex;
     flex-direction: column;
+    background-image: url('https://i.pinimg.com/originals/df/d0/b0/dfd0b0f00a35b820aa28aa22e3c2782f.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #ffffff;
+    position: relative;
+    border-bottom-left-radius: 10% 100px;
+    border-bottom-right-radius: 10% 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
