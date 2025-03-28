@@ -14,7 +14,7 @@ ul {
 }
 
 :root {
-    --main-color: #ff95cf;
+    --main-color: #fcaad7;
     --main-light-color: #fcf4df;
     --secondary-color: #551756;
 }
@@ -55,7 +55,7 @@ header {
 }
 
 .logo {
-    height: 70px;
+    height: 80px;
 }
 
 .logo img {
@@ -101,12 +101,12 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: var(--main-light-color);
+    background-color: var(--main-color);
     transition: all 0.3s ease-in-out;
 }
 
 .right-nav a:hover {
-    background-color: var(--main-color);
+    background-color: var(--main-light-color);
 }
 
 .dropdown-content {
@@ -127,7 +127,7 @@ header {
 }
 
 .dropdown-content a:hover {
-    background-color: var(--main-light-color);
+    background-color: rgb(225, 225, 225);
 }
 
 @media (min-width: 769px) {
@@ -145,7 +145,7 @@ header {
         position: static;
         width: 100%;
         box-shadow: none;
-        background: none;
+        background-color: var(--main-light-color);
         text-align: center;
     }
 
@@ -177,7 +177,6 @@ header {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    
 }
 
 @media (max-width: 768px) {
@@ -217,6 +216,10 @@ header {
         padding: 0 20px;
     }
 
+    .menu-toggle {
+        order: -1; 
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -232,8 +235,3 @@ header {
         z-index: 10;
     }
 }
-
-
-
-
-
