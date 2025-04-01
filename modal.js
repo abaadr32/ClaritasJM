@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: 5, name: "Gold Earrings", price: "$30.00", image: "logo.jpg", description: "Stylish gold earrings that complement any outfit." },
         { id: 6, name: "Diamond Ring", price: "$120.00", image: "logo.jpg", description: "A stunning diamond ring that sparkles with elegance." },
         //sandals
-        { id: 7, name: "Elegant Necklace", price: "$50.00", image: "logo.jpg", description: "A beautiful necklace to add elegance to your style." },
+        { id: 7, name: "Elegant Necklace", price: "$50.00", image: "logo.jpg", description: "A beautiful necklace to add elegance to your style.", sizes: ["S", "M", "L"], availability: "In Stock" },
         { id: 8, name: "Gold Earrings", price: "$30.00", image: "logo.jpg", description: "Stylish gold earrings that complement any outfit." },
         { id: 9, name: "Diamond Ring", price: "$120.00", image: "logo.jpg", description: "A stunning diamond ring that sparkles with elegance." },
         //makeup
