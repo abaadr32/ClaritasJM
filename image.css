@@ -68,4 +68,9 @@
     .price {
         font-size: 1.1rem; 
     }
+
+    .card img:active {
+        opacity: 0.5; /* When the image is tapped, it fades */
+        transition: opacity 5s ease-in-out; /* Keep the fade for 5 seconds */
+    }
 }
