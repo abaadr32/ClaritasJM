@@ -6,7 +6,8 @@ html, body {
     flex-direction: column;
 }
 .main-content {
-    flex: 1; 
+    flex: 1;
+    padding-top: 150px;
 }
 
 * {
@@ -38,11 +39,15 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ffffff;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
     border-bottom-left-radius: 10% 100px;
     border-bottom-right-radius: 10% 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    transition: top 0.3s ease;
 }
 
 
@@ -55,7 +60,6 @@ header {
     background-color: var(--main-light-color);
     font-weight: 500;
 }
-
 .navigation {
     display: flex;
     justify-content: space-between;
