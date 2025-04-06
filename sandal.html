@@ -54,7 +54,7 @@
             </div>
         </nav>
     </header>
-    
+
     <div class="menu-overlay" id="menu-overlay"></div>
 
     <div class="container mt-4">
@@ -67,106 +67,122 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-                <div class="card" data-id="11">
-                    <img src="logo.jpg" class="img-fluid rounded" alt="Jewelry 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Elegant Necklace</h5>
-                        <p class="card-text">A beautiful necklace to add elegance to your style.</p>
-                        <p class="price">$50.00</p>
-                    </div>
+
+            <div class="row mt-4">
+              
+              <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                  <img src="logo.jpg" class="img-fluid rounded" alt="Elegant Necklace">
+                  <div class="card-body">
+                    <h5 class="card-title">Elegant Necklace</h5>
+                    <p class="card-text">Free Delivery</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="price mb-2">$50.00</p>
+                  </div>
                 </div>
+              </div>
+          
+              <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                  <img src="logo.jpg" class="img-fluid rounded" alt="Elegant Necklace">
+                  <div class="card-body">
+                    <h5 class="card-title">Elegant Necklace</h5>
+                    <p class="card-text">Free Delivery</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="price mb-2">$50.00</p>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                  <img src="logo.jpg" class="img-fluid rounded" alt="Diamond Ring">
+                  <div class="card-body">
+                    <h5 class="card-title">Diamond Ring</h5>
+                    <p class="card-text">Free Delivery</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="price mb-2">$120.00</p>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                  <img src="logo.jpg" class="img-fluid rounded" alt="Pearl Pendant">
+                  <div class="card-body">
+                    <h5 class="card-title">Pearl Pendant</h5>
+                    <p class="card-text">Free Delivery</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="price mb-2">$80.00</p>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                  <img src="logo.jpg" class="img-fluid rounded" alt="Vintage Brooch">
+                  <div class="card-body">
+                    <h5 class="card-title">Vintage Brooch</h5>
+                    <p class="card-text">Free Delivery</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="price mb-2">$45.00</p>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                  <img src="logo.jpg" class="img-fluid rounded" alt="Vintage Brooch">
+                  <div class="card-body">
+                    <h5 class="card-title">Vintage Brooch</h5>
+                    <p class="card-text">Free Delivery</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="price mb-2">$45.00</p>
+                  </div>
+                </div>
+              </div>
+          
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-                <div class="card" data-id="12">
-                    <img src="logo.jpg" class="img-fluid rounded" alt="Jewelry 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Gold Earrings</h5>
-                        <p class="card-text">Stylish gold earrings that complement any outfit.</p>
-                        <p class="price">$30.00</p>
-                    </div>
-                </div>
+          </div>
+   
+    
+        <!-- Modal -->
+<div id="productModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-                <div class="card" data-id="13">
-                    <img src="logo.jpg" class="img-fluid rounded" alt="Jewelry 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Elegant Necklace</h5>
-                        <p class="card-text">A beautiful necklace to add elegance to your style.</p>
-                        <p class="price">$50.00</p>
-                    </div>
-                </div>
+            <div class="modal-body">
+                <img id="modalImage" class="img-fluid rounded mb-3" alt="">
+                <p id="modalDescription"></p>
+                <p class="price"><strong>Price:</strong> <span id="modalPrice"></span></p>
+                <p id="modalSizes" style="display: none;"></p> <!-- Placeholder for sizes -->
             </div>
-            
-                <div class="col-12 col-sm-6 col-md-4 mb-3">
-                    <div class="card" data-id="14">
-                        <img src="logo.jpg" class="img-fluid rounded" alt="Jewelry 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Diamond Ring</h5>
-                            <p class="card-text">A stunning diamond ring that sparkles with elegance.</p>
-                            <p class="price">$120.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-3">
-                    <div class="card" data-id="15">
-                        <img src="logo.jpg" class="img-fluid rounded" alt="Jewelry 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Diamond Ring</h5>
-                            <p class="card-text">A stunning diamond ring that sparkles with elegance.</p>
-                            <p class="price">$120.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-3">
-                    <div class="card" data-id="16">
-                        <img src="logo.jpg" class="img-fluid rounded" alt="Jewelry 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Diamond Ring</h5>
-                            <p class="card-text">A stunning diamond ring that sparkles with elegance.</p>
-                            <p class="price">$120.00</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" data-bs-dismiss="modal">Close</button>
             </div>
-        </div>
         </div>
     </div>
+</div>
 
-    <div id="productModal" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitle"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <img id="modalImage" class="img-fluid rounded mb-3" alt="">
-                    <p id="modalDescription"></p>
-                    <p class="price"><strong>Price:</strong> <span id="modalPrice"></span></p>
-                    <p id="modalSizes" style="display: none;"></p> <!-- Placeholder for sizes --> 
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-success" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        
         <footer class="text-center py-3 mt-4">
             <p>&copy; 2025 IT BOAIS WEB DEVELOPMENT</p>
         </footer>
-    
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="index.js"></script>
-<script src="modal.js"></script>
-<script src="scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="index.js"></script>
+    <script src="modal.js"></script>
+    <script src="scroll.js"></script>
         
-
-
-
+    
 </body>
 </html>
