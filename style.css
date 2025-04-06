@@ -8,7 +8,14 @@ html, body {
 .main-content {
     flex: 1;
     padding-top: 150px;
+    transition: padding-top 0.3s ease;
 }
+
+.main-content.header-hidden {
+    padding-top: 0;
+}
+
+
 
 * {
     margin: 0;
@@ -17,19 +24,23 @@ html, body {
     font-family: poppins;
 }
 
+
 a {
     text-decoration: none;
 }
 
+
 ul {
     list-style: none;
 }
+
 
 :root {
     --main-color: #fcaad7;
     --main-light-color: #fcf4df;
     --secondary-color: #551756;
 }
+
 
 header {
     display: flex;
@@ -49,6 +60,8 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: top 0.6s ease;
 }
+
+
 
 
 .header-top-bar {
@@ -71,9 +84,11 @@ header {
     position: relative;
 }
 
+
 .logo {
     height: 70px;
 }
+
 
 .logo img {
     height: 100%;
@@ -81,10 +96,12 @@ header {
     border-radius: 50%;
 }
 
+
 .menu {
     display: flex;
     gap: 20px;
 }
+
 
 .menu li a {
     padding: 8px 15px;
@@ -94,11 +111,13 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
+
 .menu li a:hover,
 .menu li a:active {
     color: var(--secondary-color);
     text-decoration: underline;
 }
+
 
 #dropdown-toggle::after {
     content: "\25BC";  
@@ -106,10 +125,12 @@ header {
     margin-left: 5px;
 }
 
+
 .right-nav {
     display: flex;
     gap: 15px;
 }
+
 
 .right-nav a {
     width: 40px;
@@ -122,9 +143,11 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
+
 .right-nav a:hover {
     background-color: var(--main-light-color);
 }
+
 
 .dropdown-content {
     display: none;
@@ -135,6 +158,7 @@ header {
     z-index: 10;
 }
 
+
 .dropdown-content a {
     display: block;
     padding: 10px;
@@ -143,17 +167,20 @@ header {
     font-size: 1rem;
 }
 
+
 .dropdown-content a:hover {
     background-color: rgb(225, 225, 225);
 }
 .card {
-    width: 90%; 
-    margin: 0 auto; 
+    width: 90%;
+    margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
 
 
 @media (min-width: 769px) {
@@ -162,10 +189,12 @@ header {
     }
 }
 
+
 @media (max-width: 768px) {
     .dropdown {
         position: relative;
     }
+
 
     .dropdown-content {
         position: static;
@@ -175,27 +204,33 @@ header {
         text-align: center;
     }
 
+
     .dropdown-content a {
         display: block;
         padding: 10px;
     }
+
 
     .dropdown.active .dropdown-content {
         display: block;
     }
 }
 
+
 .menu.active {
     display: flex;
 }
+
 
 .dropdown.active .dropdown-content {
     display: block;
 }
 
+
 .menu-overlay.active {
     display: block;  
 }
+
 
 .menu-toggle {
     display: none;
@@ -204,6 +239,7 @@ header {
     font-size: 24px;
     cursor: pointer;
 }
+
 
 footer {
     position: relative;
@@ -215,11 +251,16 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
+
 @media (max-width: 768px) {
     .main-content {
         padding-top: 150px;
     }
     
+    .main-content.header-hidden {
+        padding-top: 0;
+    }
+   
     .menu {
         display: none;
         flex-direction: column;
@@ -234,9 +275,11 @@ footer {
         transition: all 0.3s ease-in-out;
     }
 
+
     .menu.active {
         display: flex;
     }
+
 
     .menu-toggle {
         display: flex;
@@ -246,19 +289,22 @@ footer {
         background: none;
         border: none;
         justify-content: center;
-    } 
-    
+    }
+   
     .menu-container {
         display: flex;
-        align-items: center; 
-        justify-content: space-between; 
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
         padding: 0 20px;
     }
 
+
     .menu-toggle {
-        order: -1; 
+        order: -1;
     }
+
+
 
 
     .container {
@@ -266,17 +312,23 @@ footer {
         width: 90%;
         margin: auto;
         position: relative;
-        z-index: 1; 
+        z-index: 1;
     }
+
 
     .menu {
         z-index: 10;
     }
 
-    
+
+   
         footer {
             font-size: 14px;
             padding: 8px 0;
         }
-    
+   
 }
+
+
+
+
