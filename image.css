@@ -27,9 +27,11 @@
 
 .card img {
     width: 100%;          /* makes the image take the full width of the card */
-    height: 500px;        /* forces same height for all */
+    height: 400px;        /* forces same height for all */
     object-fit: cover;    /* crops without distorting the image */
   }
+
+ 
 
 .card-body {
     padding: 15px;
@@ -69,7 +71,7 @@
         font-size: 1.1rem; 
     }
     .card img {
-        height: 250px;
+        height: 240px;
       }
       
 
