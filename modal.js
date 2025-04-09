@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
     const products = [
         //jewelry
-        { id: 75, name: "Watch Set", price: "$35.00", image: "silverwatch.png", description: "Elegant silver watch with matching chain.", shipping: "Shipping Country Wide" },
+        { id: 75, name: "Watch Set", price: "$38.00", image: "silverwatch.png", description: "Elegant silver watch", shipping: "Shipping Country Wide" },
         { id: 1, name: "Silver Sets", price: "$45.00", image: "silver1.png", description: "Nice Elegant Silver Chain", shipping: "Shipping Country Wide" },
         { id: 2, name: "Silver Sets", price: "$45.00", image: "silver2.png", description: "Nice Elegant Silver Chain", shipping: "Shipping Country Wide" },
         { id: 3, name: "Cross Gold Earring", price: "$70.00", image: "goldj.png", description: "Cross Golden Earring of 10kT Gold",shipping: "Shipping Country Wide" },
         { id: 4, name: "Stone Gold Earring", price: "$85.00", image: "gold2j.png", description: "Stone Golden Earring of 10KT Gold", shipping: "Shipping Country Wide" },
         { id: 5, name: "Star Gold Earrings", price: "$30.00", image: "gold3j.png", description: "Star Golden Earrings of 10KT Gold", shipping: "Shipping Country Wide" },
+        { id: 76, name: "Stanley", price: "$38.00", image: "stanley.png", description: "keeps your drinks hot or cold for hours Ideal for daily use", shipping: "Shipping Country Wide" },
+  
+        { id: 77, name: "Chair Cover", price: "$65.00", image: "chairc.png", description: "Stylish and stretchable chair cover", shipping: "Shipping Country Wide" },
+   
         //makeup     
         { id: 6, name: "Contour", price: "$6.00", image: "make1.png", description: "Define your features with this smooth blend contour.", shipping: "Shipping Country Wide" },
         { id: 7, name: "Butterfly Lipstick", price: "$12.00", image: "make2.png", description: "Long-lasting lipstick with a rich, matte finish.", shipping: "Shipping Country Wide" },
