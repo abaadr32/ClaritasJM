@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const products = [
         //jewelry
+        { id: 75, name: "Watch Set", price: "$35.00", image: "silverwatch.png", description: "Elegant silver watch with matching chain.", shipping: "Shipping Country Wide" },
         { id: 1, name: "Silver Sets", price: "$45.00", image: "silver1.png", description: "Nice Elegant Silver Chain", shipping: "Shipping Country Wide" },
         { id: 2, name: "Silver Sets", price: "$45.00", image: "silver2.png", description: "Nice Elegant Silver Chain", shipping: "Shipping Country Wide" },
         { id: 3, name: "Cross Gold Earring", price: "$70.00", image: "goldj.png", description: "Cross Golden Earring of 10kT Gold",shipping: "Shipping Country Wide" },
